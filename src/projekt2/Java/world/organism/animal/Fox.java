@@ -43,7 +43,7 @@ public class Fox extends Animal {
                 break;
             }
             else if(world.getBoard()[(int) p.getY()][(int) p.getX()].getStrenght()<=this.getStrenght()){
-                collision(world.getBoard()[(int)p.getY()][(int)p.getX()]);
+                super.collision(world.getBoard()[(int)p.getY()][(int)p.getX()]);
                 break;
             }
 

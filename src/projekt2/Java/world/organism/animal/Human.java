@@ -38,7 +38,7 @@ public class Human extends Animal {
                 makeMove(p);
             }
             else {
-                collision(world.getBoard()[(int)p.getY()][(int)p.getX()]);
+                super.collision(world.getBoard()[(int)p.getY()][(int)p.getX()]);
             }
             if (world.getBoard()[(int) p.getY()][(int) p.getX()]!=this)break;
         }
